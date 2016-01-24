@@ -1,7 +1,7 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import {Navbar} from '../components/Navbar/index.js'
-import {SearchBar} from '../components/SearchBar/index.js'
+import SearchBarContainer from './SearchBarContainer.jsx'
 
 class App extends React.Component {
   constructor(props){
@@ -11,13 +11,12 @@ class App extends React.Component {
     return (
       <div>
         <Navbar>
-          <SearchBar />
+          <SearchBarContainer />
         </Navbar>
-        <h1>This is the App component.</h1>
         {this.props.children}
       </div>
     )
   }
 }
 
-module.exports = connect()(App);
+export default connect()(App);
