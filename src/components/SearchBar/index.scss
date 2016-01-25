@@ -7,7 +7,12 @@
     height: 70px;
   }
   .search-btn {
+    background-color: #320059;
+    color: #ffffff;
     text-align: center;
     vertical-align: middle;
+  }
+  .search-btn:active {
+    padding-top: 5px;
   }
 }

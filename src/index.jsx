@@ -10,7 +10,17 @@ import { reducers, middleware } from './redux/index.js';
 import { App, Home } from './containers/index.js';
 
 
-const initialState = {};
+const initialState = {
+  searchResults: {displayFilter:'Grid'},
+  searchBar: {
+    selectedValues: {
+      Gender: 0,
+      Services: 0,
+      Orientation: 0,
+      Location: 0
+    }
+  }
+};
 
 const history = createHashHistory();
 const reduxRouterMiddleware = syncHistory(history);

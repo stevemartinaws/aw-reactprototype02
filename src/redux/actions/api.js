@@ -4,7 +4,6 @@ import {SEARCH_PROFILES_SUCCESS, SEARCH_PROFILES_ERROR} from '../constants/index
 
 
 function fetchSearchProfiles(searchQuery) {
-  console.log(searchQuery)
   if (searchQuery) {
     var queryString = ''
     Object.keys(searchQuery).map(function (key) {

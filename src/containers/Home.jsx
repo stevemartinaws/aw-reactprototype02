@@ -1,5 +1,6 @@
 import React from 'react';
 import {connect} from 'react-redux';
+import SearchResultsContainer from './SearchResultsContainer.jsx'
 
 class Home extends React.Component {
   constructor(props){
@@ -8,7 +9,7 @@ class Home extends React.Component {
   render(){
     return (
       <div>
-        <h1>This is the Home component.</h1>
+        <SearchResultsContainer />
         {this.props.children}
       </div>
     )
